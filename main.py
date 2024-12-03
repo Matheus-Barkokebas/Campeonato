@@ -14,5 +14,9 @@ def login():
     senhaLogar = request.form.get('senhaCamp')
     return render_template('login.html')
 
+@app.route('/bntCadastrar')
+def rotaBntCadastrar():
+    return render_template('cadastro.html')
+
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
